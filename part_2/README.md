@@ -15,3 +15,4 @@ In this section we will learn how to extract more information from RNA-Seq exper
 1. Introduction to Differential Splicing (DS)
 	1. Review of DS methods
 	1. Application with [**Leafcutter**](https://github.com/davidaknowles/leafcutter) 
+1. Checking for alternatie splicing consequences
