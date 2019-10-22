@@ -1,0 +1,83 @@
+Workflow managers for reproducible computational research:
+  - Duration:
+    - 30 min
+  - Objectives:
+    - Introduce the concentp of reproducible workflows
+    - Present SnakeMake Wrappers as a easy alternative to run bioinfomartic tools  
+  - Sections:
+    - Introduction to computational workflows
+    - Do we need a workflow manager?
+    - What is computational portability?
+    - Why we should spend time documenting our analysis and workflows
+    - What are the pros- and cons- of Snakemake as workflow manager
+    - Snakemake wrappers  
+  - Software:
+    - Snakemake 5.4.3 (version is flexible)
+
+
+Differential Splicing from RNA-Seq:
+  - Duration:
+    - 30 min
+  - Objectives:
+    - High-level introduction to the different software packages
+  - Sections: 
+    intron -exon definition break 
+    - Premature RNA splicing from the perspective of a bioinformatician
+    - Exon-exon junctions or splicing-junctions (SJ) 
+    - Examples of mis-splicing and human disease 
+    - The splicing code and how different tissues produce different transcript isoforms
+    - Types of AS
+    - Consequences of AS (1) different UTR; (2) NMD isoforms (10.1038/s41467-017-00370-5); (3) cell differentiation (10.1182/blood-2016-01-692764); (4) protein-protein interactions (10.1016/j.molcel.2012.05.039); (4) different ORF
+    - Difference between ATSS/ATTS and AS
+
+
+Introduction to Differential Transcript Usage (DTU):
+  - Duration:
+    - 60 min
+  - Objectives:
+    - Given an RNA-Seq dataset 
+  - Sections:
+    - DTU is complementar to DGE
+    - Transcripts from same gene may have different functions (functionally different gene products)
+    - More importantly, tissue-specific isoforms may help us to understand human disease
+    - de novo transcriptomics with Stringtie
+    - transcript abbundance estimation with Salmon
+    - In
+  - Software:
+    - Stringtie
+    - Salmon
+    - R
+    - Drim-Seq
+
+
+Introduction to Differential Splicing (DS):
+  - Duration:
+    - 30 min
+  - Questions:
+    - 
+  - Objective:
+    - 
+  - Software:
+    - R
+    - Perl
+    - samtools
+
+
+Hand-on Using Leafcutter from Baltica:
+  - Duration:
+    - 60 min
+  - Objectives:
+    - 
+  - Sections:
+    - Baltica is a Snakemake workflows for differential splicing 
+  - Software:
+    - Baltica
+
+Examples of Downstream analysis:
+  - Sections:
+  - Duration:
+    - 60 min
+  - Questions:
+  - Objective:
+  - Software:
+    - Baltica
