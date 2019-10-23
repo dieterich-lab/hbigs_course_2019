@@ -1,83 +1,101 @@
 Workflow managers for reproducible computational research:
-  - Duration:
-    - 30 min
-  - Objectives:
-    - Introduce the concentp of reproducible workflows
-    - Present SnakeMake Wrappers as a easy alternative to run bioinfomartic tools  
   - Sections:
     - Introduction to computational workflows
+  - Duration:
+    - 30 min
+  - Questions:
+    - What is a workflow / pipeline?
     - Do we need a workflow manager?
     - What is computational portability?
-    - Why we should spend time documenting our analysis and workflows
-    - What are the pros- and cons- of Snakemake as workflow manager
-    - Snakemake wrappers  
+    - Why we document our analysis and workflows
+    - What are the pros- and cons- of Snakemake as workflow manager 
+  - Objective:
+    - Understand the benefits of computational workflows 
   - Software:
-    - Snakemake 5.4.3 (version is flexible)
+    - Snakemake 5.4.3 
 
 
 Differential Splicing from RNA-Seq:
-  - Duration:
-    - 30 min
-  - Objectives:
-    - High-level introduction to the different software packages
-  - Sections: 
-    intron -exon definition break 
+  - Sections:
     - Premature RNA splicing from the perspective of a bioinformatician
-    - Exon-exon junctions or splicing-junctions (SJ) 
-    - Examples of mis-splicing and human disease 
-    - The splicing code and how different tissues produce different transcript isoforms
-    - Types of AS
-    - Consequences of AS (1) different UTR; (2) NMD isoforms (10.1038/s41467-017-00370-5); (3) cell differentiation (10.1182/blood-2016-01-692764); (4) protein-protein interactions (10.1016/j.molcel.2012.05.039); (4) different ORF
-    - Difference between ATSS/ATTS and AS
+    - RNA splicing refresher
+    - Mis-splicing and human disease 
+    - Properties of the splice sites
+    - Define, annotation, gtf gff, and the gene structure model
+    - Elements of annotation, genes, transcripts, exons, CDS and UTRs  
+    - DGE the total expression produced by all isoforms of a gene 
+    - DTU isoform specific 
+    - Annotation is a model, but don't work for every  disease or tissue
+    - Alternative splicing types
+    - Alternative and mis-splicing consequences (NMD, truncated domain or change on traffic)
+    - The splicing code
+    - 75% of introns are missing from annotations 
+    - Short- vs long-read RNA-Seq (Illumina vs Nanopore)
+  - Duration:
+    - 45 min
+  - Questions:
+    - How to identify splice junctions from RNA-Seq experiments
+    - Why mis-splicing applies to human disease
+    - On the splice graph, what are the splicing-junctions (SJ)
+    - What are the important parameters while designing an experiment to detect alternative splicing
+  - Objective:
+    - Introduce splicing from the bioinformatician perspective
+    - Define jargon used on splicing analysis 
 
 
 Introduction to Differential Transcript Usage (DTU):
+  - Sections:
+    - Salmon, a fast way to compute transcript abundance
+    - DTU is complementary to DGE
+    - DRIM-Seq computes the change of transcript's proportions
+    - Alternatives to DRIM-Seq (mention DEXSeq, IsoformSwitchAnalyzeR)
+    - DTU is intuitive, but is limited by the annotation 
   - Duration:
     - 60 min
-  - Objectives:
-    - Given an RNA-Seq dataset 
-  - Sections:
-    - DTU is complementar to DGE
-    - Transcripts from same gene may have different functions (functionally different gene products)
-    - More importantly, tissue-specific isoforms may help us to understand human disease
-    - de novo transcriptomics with Stringtie
-    - transcript abbundance estimation with Salmon
-    - In
+  - Objective:
+    - Introduction to the DTU use case
+    - High-level explanation on how Salmon and DRIM-Seq works
+    - Hand-on Salmon computation (Snakemake) and DRIM-Seq simplified workflow (notebook)
   - Software:
-    - Stringtie
     - Salmon
-    - R
-    - Drim-Seq
+    - R, DRIM-Seq
 
 
-Introduction to Differential Splicing (DS):
+Differential splicing analysis from event level perspective:
+  - Sections:
+    - Unbiased approach to splicing events (annotation-independent)
+    - Majiq algorithm
+    - Leafcutter algorithm
+    - These approaches do not rely on transcript models or pre-defined splicing events  
+    - Enable the association of splicing variants and patient mutations 
+    - Requires more work to understand AS consequences
   - Duration:
     - 30 min
   - Questions:
-    - 
+    - What are the advantages and barriers to AS identification using leafcutter
   - Objective:
-    - 
-  - Software:
-    - R
-    - Perl
-    - samtools
+    - Learn the background of the new methods for DS analysis
+    - Understand the different use cases between transcript- and event- level analysis 
 
 
 Hand-on Using Leafcutter from Baltica:
-  - Duration:
-    - 60 min
-  - Objectives:
-    - 
   - Sections:
-    - Baltica is a Snakemake workflows for differential splicing 
-  - Software:
-    - Baltica
-
-Examples of Downstream analysis:
-  - Sections:
+    - Baltica facilitates integration and comparison of different DS methods
+    - Vizualization, IGV (no hands-on)
+    - For annotated transcripts, use Ensembl, UniProt and UCSC Genome Browser (tomorrow) 
+    - Computational methods to compute protein disorder
+    - Transcript sub-cellular location prediction
+    - ORF and NMD
   - Duration:
     - 60 min
   - Questions:
+    - Why do we need workflow managers
+    - What is the easiest way to identify the potential consequence of a new intron
   - Objective:
+    - Extend the theory with some pratice using workflow manager
+    - Introduce databases and computational methods to study differences in isoforms 
   - Software:
-    - Baltica
+    - Baltica (only the LeafCutter scripts)
+    - R, leafcutter
+    - samtools
+    - python2
