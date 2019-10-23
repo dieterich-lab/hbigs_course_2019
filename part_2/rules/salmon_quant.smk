@@ -1,10 +1,10 @@
 rule salmon_quant:
   input:
-    r1 = lambda wildcards: FILES[wildcards.sample][0],
-    r2 = lambda wildcards: FILES[wildcards.sample][1],
+    r1 = "/pub/hbigs_course_2019/part_1/downsampled/raw_data/{sample}_R1.fastq.gz",
+    r2 = "/pub/hbigs_course_2019/part_1/downsampled/raw_data/{sample}_R2.fastq.gz",
     index = "salmon/salmon_index/"
   output:
-    "salmon/{sample}/quant.sf"
+    "part_2/salmon/{sample}/quant.sf"
   threads:
     10
   log:
