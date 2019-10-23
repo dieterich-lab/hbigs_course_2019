@@ -1,13 +1,9 @@
 rule all:
   input:
-    'part_2/salmon/SRR7451179__Rep_2__MP60-2__mRNA_Seq__PBS/quant.sf',
-    'part_2/salmon/SRR7451179__Rep_2__MP60-2__mRNA_Seq__PBS/quant.sf',
-    'part_2/salmon/SRR7451182__Rep_1__ME60-1__mRNA_Seq__EGF/quant.sf',
-    'part_2/salmon/SRR7451182__Rep_1__ME60-1__mRNA_Seq__EGF/quant.sf',
-    'part_2/salmon/SRR7451187__Rep_1__MP60-1__mRNA_Seq__PBS/quant.sf',
-    'part_2/salmon/SRR7451187__Rep_1__MP60-1__mRNA_Seq__PBS/quant.sf',
-    'part_2/salmon/SRR7451201__Rep_2__ME60-2__mRNA_Seq__EGF/quant.sf',
-    'part_2/salmon/SRR7451201__Rep_2__ME60-2__mRNA_Seq__EGF/quant/sf'
+    'salmon/SRR7451179__Rep_2__MP60-2__mRNA_Seq__PBS/quant.sf',
+    'salmon/SRR7451182__Rep_1__ME60-1__mRNA_Seq__EGF/quant.sf',
+    'salmon/SRR7451187__Rep_1__MP60-1__mRNA_Seq__PBS/quant.sf',
+    'salmon/SRR7451201__Rep_2__ME60-2__mRNA_Seq__EGF/quant.sf',
 
 rule salmon_quant:
   input:
