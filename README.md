@@ -1,7 +1,9 @@
 # HBIGS course 2019: Introduction to long and short RNA-seq analysis
 
 ### Dates and venue
+
 24.10 from 9.00-17.00. Seminar room AZIII 03.434 (Im Neuenheimer Feld 669).
+
 25.10 from 9.00-17.00. Seminar room AZIII 02.332 (Im Neuenheimer Feld 669). 
 
 ### Description
@@ -34,6 +36,5 @@ You do not need to install any other packages. A background in programming is no
 | 12.30-13.30 | Lunch |  |
 | 13.30-14.30 | [Introduction to transcriptome-wide analysis of translational efficiency](ribosome-profiling/README.md) | Etienne Boileau |
 | 14.30-15.00 | Break |  |
-| 15.00-17.00 | Introduction to version control (Git, GitHub) and open-source software, | Tobias Jakobi |
-|  | bioinformatics tools for DGEA (GO, GSEA), package managers (Bioconductor, *etc.* ), questions/feedback | Etienne Boileau |
+| 15.00-17.00 | Introduction to version control (Git, GitHub) and open-source software, package managers (Bioconductor, *etc.* ), bioinformatics tools for DGEA (GO, GSEA), questions/feedback, self-guided learning | Tobias Jakobi, Etienne Boileau |
 
