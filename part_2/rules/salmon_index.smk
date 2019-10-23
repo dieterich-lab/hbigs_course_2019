@@ -1,6 +1,6 @@
 rule salmon_index:
   input:
-    rules.extract_sequences.output
+    'Homo_sapiens.GRCh38.cdna.all.fa.gz'
   output:
     directory("salmon/salmon_index/")
   threads:
